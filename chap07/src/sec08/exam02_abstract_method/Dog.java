@@ -7,7 +7,7 @@ public class Dog extends Animal {
 		this.kind = "포유류";
 	}
 	
-	// 추상메서드를 구현한다. ( = 재정의한다 = implementation)
+	// 추상메서드의 구현부를 구현한다. ( = 실행문을 재정의한다, 구현한다 = implementation)
 	@Override
 	public void sound() {
 		System.out.println("멍멍뭉멍");
