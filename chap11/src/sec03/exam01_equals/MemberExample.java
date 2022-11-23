@@ -2,6 +2,11 @@ package sec03.exam01_equals;
 
 public class MemberExample {
 	public static void main(String[] args) {
+		// memberID 변수에 "blue" 값 들어오면 String 객체가 만들어져
+		// 그 객체의 주소값이 Member객체에 있는 memberID 필드 공간에
+		// 들어간다.
+		// 헷갈리지 말아야 하는게 "blue"값 자체가 memberID 필드 공간안에
+		// 들어가는 것이 아니다..?
 		Member obj1 = new Member("blue");
 		Member obj2 = new Member("blue");
 		Member obj3 = new Member("red");
@@ -20,8 +25,8 @@ public class MemberExample {
 		// 만일 재정의된 equals 메서드가 아닌 그냥 Object 클래스에서 주는
 		// equals메서드로 호출해서 실행한다면 동등하지 않다고 출력된다.
 		// 왜? obj1과 obj2가 가지고 있는 주소값은 다르기 때문이다.
-		// Object obj2 = new Member("red");
 		
+		// Object obj2 = new Member("red");
 		if(obj1.equals(obj2)) {
 			System.out.println("obj1과 obj2는 동등합니다.");
 		} else {
