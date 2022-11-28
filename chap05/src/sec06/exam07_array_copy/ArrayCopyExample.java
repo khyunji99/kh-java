@@ -5,6 +5,7 @@ public class ArrayCopyExample {
 		String[] oldStrArray = { "java", "array", "copy" };
 		String[] newStrArray = new String[5];
 
+		// arraycopy() 사용하여 배열 복사
 		System.arraycopy(oldStrArray, 0, newStrArray, 0, oldStrArray.length);
 
 		for (int i = 0; i < newStrArray.length; i++) {
