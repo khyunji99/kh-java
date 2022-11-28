@@ -3,6 +3,7 @@ package Excercise.q9;
 public class StringBuilderExample {
 
 	public static void main(String[] args) {
+		
 		String str = "";
 		for(int i = 1; i <= 100; i++) {
 			str += i;
@@ -17,5 +18,7 @@ public class StringBuilderExample {
 		}
 		// StringBuilder 사용해서 문자열 출력	
 		System.out.print(sb.toString());
+		
 	}
+
 }
