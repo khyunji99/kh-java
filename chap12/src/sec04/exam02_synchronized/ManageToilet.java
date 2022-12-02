@@ -1,9 +1,7 @@
 package sec04.exam02_synchronized;
 
 // 5개의 Thread를 만들어 실행 시키는 클래스
-
 public class ManageToilet {
-
     public static void main( String[] args ) {
 		Toilet t = new Toilet();
 

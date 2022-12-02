@@ -2,7 +2,6 @@ package sec04.exam02_synchronized;
 
 // key를 이용해서 Thread간에 충돌이 일어나지 않도록 실행순서를 맞추는 것을 
 // Thread의 동기화(Synchronization)라고 한다.
-
 public class Toilet { // 화장실을 사용하는 과정을 보여주는 클래스
 
 	// 메소드의 동기화 방법
@@ -26,5 +25,4 @@ public class Toilet { // 화장실을 사용하는 과정을 보여주는 클래스
 			}
 		}
 	}// usingTime() end
-
 }

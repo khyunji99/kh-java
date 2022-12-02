@@ -1,7 +1,6 @@
 package sec04.exam02_synchronized;
 
 // Thread 클래스를 상속받아 Thread를 정의함.
-
 public class Family extends Thread {
 	Toilet toilet;
 	String who;
