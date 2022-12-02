@@ -1,5 +1,6 @@
 package sec02.exam01_none_generic_type;
 
+
 public class BoxExample {
 	public static void main(String[] args) {
 		/** 제네릭 타입을 사용하지 않은 경우 **/

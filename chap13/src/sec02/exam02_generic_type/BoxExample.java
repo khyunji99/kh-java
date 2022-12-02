@@ -10,7 +10,6 @@ public class BoxExample {
 		box2.set(6);            // Integer = int <-- 박싱(boxing)
 		int value = box2.get(); // int = Integer <-- 언박싱(unboxing)
 		
-		
 	}
 }
 // Box 객체에 여러가지 타입의 매개변수들이 들어갈 수 있다.
