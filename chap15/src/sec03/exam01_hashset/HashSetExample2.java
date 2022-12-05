@@ -1,6 +1,7 @@
 package sec03.exam01_hashset;
 
-import java.util.*;
+import java.util.HashSet;
+import java.util.Set;
 
 public class HashSetExample2 {
 	public static void main(String[] args) {

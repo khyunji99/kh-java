@@ -64,6 +64,4 @@ public class BoardVO extends Object {
 	public String toString() {
 		return "작성자:" + register + ",이메일:" + email + ",제목:" + subject + ",글내용:" + content;
 	}
-	
-	
 }

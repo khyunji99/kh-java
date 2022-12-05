@@ -1,6 +1,8 @@
 package sec03.exam01_hashset;
 
-import java.util.*;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
 
 public class HashSetExample1 {
 	public static void main(String[] args) {
@@ -35,7 +37,6 @@ public class HashSetExample1 {
 		for(String element : set) {
 			System.out.println(element);
 		}
-		
 		
 		// set.clear() 메서드 : set의 모든 값들 삭제
 		set.clear();

@@ -16,10 +16,8 @@ public class SetTest01 {
 		set.add(r.nextInt(45)+1); 
 		set.add(r.nextInt(45)+1); 
 		set.add(r.nextInt(45)+1); 
-				
 		
 		int numCount = set.size();
-		
 		
 		while(numCount != 6) {
 			switch(numCount) {

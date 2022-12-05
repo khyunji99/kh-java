@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class BoardMain {
 	public static void main(String[] args) {
-// TODO Auto-generated method stub
 		boolean isStop = false;
 		Scanner sc = new Scanner(System.in);
 		BoardSVC boardSVC = new BoardSVC();
