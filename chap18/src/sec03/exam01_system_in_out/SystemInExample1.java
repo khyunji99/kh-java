@@ -12,7 +12,9 @@ public class SystemInExample1 {
 		System.out.print("메뉴를 선택하세요: ");
 		
 		InputStream is = System.in;
-		char inputChar = (char) is.read();			
+		// System.in : 콘솔에서 바이트기반의 입력스트림을 생성한다.
+		char inputChar = (char) is.read();
+		// read() 메서드는 읽어온 데이터를 4바이트 int형으로 반환한다.
 		switch(inputChar) {
 			case '1':
 				System.out.println("예금 조회를 선택하셨습니다.");

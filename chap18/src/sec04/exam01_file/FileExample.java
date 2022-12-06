@@ -11,6 +11,8 @@ public class FileExample {
 		File file1 = new File("C:/Temp/file1.txt");
 		File file2 = new File("C:/Temp/file2.txt");
 		File file3 = new File(new URI("file:///C:/Temp/file3.txt"));
+		// 파일 객체 4개 생성함
+		
 		
 		if(dir.exists() == false) {  dir.mkdirs();  }
 		if(file1.exists() == false) {  file1.createNewFile();  }
@@ -20,7 +22,8 @@ public class FileExample {
 		File temp = new File("C:/Temp");
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd   a   HH:mm");
 		File[] contents = temp.listFiles();
-		System.out.println("날짜              시간         형태       크기    이름");
+		// listFiles() : 파일은 뭐가 있고 디렉토리는 뭐가 있는지 반환..
+		System.out.println("날짜                시간                  형태        크기       이름");
 		System.out.println("-------------------------------------------------------------------");
 		for(File file : contents) {
 			System.out.print(sdf.format(new Date(file.lastModified())));

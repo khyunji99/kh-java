@@ -5,7 +5,7 @@ import java.io.FileOutputStream;
 
 public class FileOutputStreamExample {
 	public static void main(String[] args) throws Exception {
-		String originalFileName = "D:/02.download/java/chap18/src/sec04/exam03_fileoutputstream/house.jpg";
+		String originalFileName = "C:\\dev\\workspace\\java\\chap18\\src\\sec04\\exam03_fileoutputstream\\house.jpg";
 		String targetFileName = "C:/Temp/house.jpg";
 		
 		FileInputStream fis = new FileInputStream(originalFileName);
@@ -13,10 +13,10 @@ public class FileOutputStreamExample {
 		
 		int readByteNo;
 		byte[] readBytes = new byte[100];
-		while( (readByteNo = fis.read(readBytes)) != -1 ) {
+		
+		while((readByteNo = fis.read(readBytes)) != -1) {
 			fos.write(readBytes, 0, readByteNo);
 		}
-		
 		fos.flush();
 		fos.close();
 		fis.close();
