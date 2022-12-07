@@ -16,26 +16,31 @@ public class BufferedOutputStreamExample {
 		long start = 0;
 		long end = 0;
 		
-		fis = new FileInputStream("C:/JavaProgramming/source/chap18/src/sec05/exam05_bufferedoutputstream/forest.jpg");
+		fis = new FileInputStream("C:\\dev\\workspace\\java\\chap18\\src\\sec05\\exam05_bufferedoutputstream\\forest.jpg");
 		bis = new BufferedInputStream(fis);
-		fos = new FileOutputStream("C:/Temp/forest.jpg");				
+		fos = new FileOutputStream("C:/Temp/forest.jpg");		
+		//"C:/Temp/forest.jpg" 파일을 바이트기반 으로 만들겠다는 것
 		start = System.currentTimeMillis();
+		
 		while((data = bis.read()) != -1) {
 			fos.write(data);
 		}
+		
 		fos.flush();
 		end = System.currentTimeMillis();
 		fos.close(); 	bis.close();  fis.close();
 		System.out.println("사용하지 않았을 때: " + (end-start) + "ms");
 		
-		fis = new FileInputStream("C:/JavaProgramming/source/chap18/src/sec05/exam05_bufferedoutputstream/forest.jpg");
+		fis = new FileInputStream("C:\\dev\\workspace\\java\\chap18\\src\\sec05\\exam05_bufferedoutputstream\\forest.jpg");
 		bis = new BufferedInputStream(fis);
 		fos = new FileOutputStream("C:/Temp/forest.jpg");		
 		bos = new BufferedOutputStream(fos);
 		start = System.currentTimeMillis();
+		
 		while((data = bis.read()) != -1) {
 			bos.write(data);
 		}
+		
 		bos.flush();
 		end = System.currentTimeMillis();
 		bos.close(); fos.close(); 	bis.close(); fis.close();
