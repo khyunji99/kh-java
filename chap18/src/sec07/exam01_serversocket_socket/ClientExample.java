@@ -7,17 +7,22 @@ import java.net.Socket;
 public class ClientExample {
 	public static void main(String[] args) {
 		Socket socket = null;
+		socket = new Socket();
+		System.out.println( "[연결 요청]");
+		
 		try {
-			socket = new Socket();
-			System.out.println( "[연결 요청]");
-			socket.connect(new InetSocketAddress("localhost", 5001));
+			socket.connect(new InetSocketAddress("192.168.30.199", 5001));
 			System.out.println( "[연결 성공]");
-		} catch(Exception e) {}
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
 		
 		if(!socket.isClosed()) {
 			try {
 				socket.close();
-			} catch (IOException e1) {}
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
 		}	
 	}
 }

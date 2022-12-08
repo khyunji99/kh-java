@@ -15,7 +15,6 @@ public class FileReaderExample {
 			System.out.print(data);
 		}
 		fr.close();
-		
 	}
 }
 

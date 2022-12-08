@@ -21,7 +21,5 @@ public class BufferedReaderExample {
 		
 		System.out.println("Ãâ·Â : "+lineString);
 		
-		
-		
 	}
 }

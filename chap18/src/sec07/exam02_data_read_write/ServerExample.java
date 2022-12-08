@@ -22,15 +22,15 @@ public class ServerExample {
 				byte[] bytes = null;
 				String message = null;
 				
-				InputStream is = socket.getInputStream();
+				InputStream is = socket.getInputStream(); // 데이터 받는
 				bytes = new byte[100];
 				int readByteCount = is.read(bytes);
-				message = new String(bytes, 0, readByteCount, "UTF-8");
+				message = new String(bytes, 0, readByteCount, "UTF-8"); // 바이트 -> 문자열 : 디코딩
 				System.out.println("[데이터 받기 성공]: " + message);
 				
-				OutputStream os = socket.getOutputStream();
+				OutputStream os = socket.getOutputStream(); // 데이터 출력, 보내는
 				message = "Hello Client";
-				bytes = message.getBytes("UTF-8");
+				bytes = message.getBytes("UTF-8"); // 문자열 -> 바이트 배열 : 인코딩
 				os.write(bytes);
 				os.flush();
 				System.out.println( "[데이터 보내기 성공]");
