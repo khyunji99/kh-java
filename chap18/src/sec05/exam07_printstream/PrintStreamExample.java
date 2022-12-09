@@ -18,7 +18,6 @@ public class PrintStreamExample {
 		// 바이트기반이라서 바이트로 데이터를 넣어야하는데 보조스트림 PrintStream을
 		// 사용해서 그에 대한 메서드를 사용함으로 문자열을 집어넣고 문자열을 출력하게 한다. 
 		
-		
 		ps.flush();
 		ps.close();
 		fos.close();
